@@ -4,7 +4,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-    AircraftControl Cy_27 = new AircraftControl(50, "Black");
+    Cy_27 Cy_27 = new Cy_27(30,28,1500,2000,"Black");
     Cy_27.StartingTheEngines();
     Cy_27.takeOff();
     Cy_27.moveUp();

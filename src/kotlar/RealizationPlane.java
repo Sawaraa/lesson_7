@@ -6,7 +6,11 @@ public class RealizationPlane extends Plane{
 
   Random random = new Random();
 
-  ///// включення двигунів, вивиодить скільки часу до готовності
+  public RealizationPlane(int lenght, int width, int weight) {
+    super(lenght,width, weight);
+  }
+
+  ///// включення двигунів, виводить скільки часу до готовності
   @Override
   void StartingTheEngines() {
     int time = random.nextInt(20,88);
@@ -17,7 +21,7 @@ public class RealizationPlane extends Plane{
   @Override
   void takeOff() {
     double distance = random.nextDouble(0,1000);
-    System.out.println("distance on a full tank of fuel: " + distance + " km");
+    System.out.println("Distance on a full tank of fuel: " + distance + " km");
   }
 
   @Override
